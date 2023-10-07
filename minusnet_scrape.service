@@ -1,0 +1,14 @@
+[Unit]
+Description=Run minusnet scrape
+After=network.target
+
+[Service]
+Type=simple
+Restart=no
+User=minusnet
+Environment=MINUSNET_DATA_DIR=/var/lib/minusnet
+ExecStart=/usr/bin/minusnet scrape
+WorkingDirectory=/var/lib/minusnet
+
+[Install]
+WantedBy=multi-user.target

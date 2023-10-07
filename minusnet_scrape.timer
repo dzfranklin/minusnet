@@ -1,0 +1,9 @@
+[Unit]
+Description=Run minusnet scrape hourly
+
+[Timer]
+OnBootSec=1hour
+OnUnitActiveSec=1hour
+
+[Install]
+WantedBy=timers.target
