@@ -4,6 +4,7 @@ Description=Run minusnet scrape hourly
 [Timer]
 OnBootSec=1hour
 OnUnitActiveSec=1hour
+RandomizedDelaySec=10min
 
 [Install]
 WantedBy=timers.target
