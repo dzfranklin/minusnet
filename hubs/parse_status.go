@@ -1,4 +1,4 @@
-package status
+package hubs
 
 import (
 	"regexp"
@@ -23,7 +23,7 @@ func parseStatus(text string) (Status, error) {
 	}
 
 	return Status{
-		ConnectionStatus:   mapping["Connection status"],
+		ConnectionStatus:   mapping["Connection statuses"],
 		FirmwareVersion:    mapping["Firmware version"],
 		DownstreamSyncMbps: parseMbps(mapping["Downstream sync speed"]),
 		UpstreamSyncMbps:   parseMbps(mapping["Upstream sync speed"]),
