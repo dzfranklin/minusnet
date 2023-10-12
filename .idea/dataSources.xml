@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="minusnet.db" uuid="cd8446d2-e900-4f71-bb5a-682824167a33">
+    <data-source source="LOCAL" name="/tmp/minusnet.sqlite" uuid="0301cbcd-7fb8-4e53-93eb-941403d42163">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:/var/lib/minusnet/minusnet.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:/tmp/minusnet/minusnet.db</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
+      </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
